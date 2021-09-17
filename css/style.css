@@ -1,0 +1,26 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+/*Inherit, cuando se fuerza la herencia*/
+
+* {
+  margin: inherit; /*Cuando es 0 no se pone ni px ni nada, por quñe es una mala practica*/
+  padding: 0;
+  box-sizing: border-box;
+  /*box-sizing: border-box;*/
+}
+
+body{
+  margin: 10px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+}
+
