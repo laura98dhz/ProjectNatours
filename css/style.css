@@ -9,15 +9,16 @@ Dark green: #28b485
 /*Inherit, cuando se fuerza la herencia*/
 
 * {
-  margin: inherit; /*Cuando es 0 no se pone ni px ni nada, por quñe es una mala practica*/
+  /*reseteo de estilos*/
+  margin: 0; /*Cuando es 0 no se pone ni px ni nada, por quñe es una mala practica*/
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* sirve para que el tamaño de los objetos sea el que marcamos con bordes incluidos sino el borde contaria aparte y sería complicado de calculars*/
   /*box-sizing: border-box;*/
 }
 
 body{
   margin: 10px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif; /*se pone la primera, sino se puede la segunda*/
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
