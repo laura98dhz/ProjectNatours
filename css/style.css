@@ -1,1 +1,28 @@
+/*
+COLORS:
 
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+/*
+Reseteo de estilos: lo que queremos es q nuestra aplicacion web se vea igual en todos los navegadpres, 
+pero los navegadpres tienen estilos por defecto, por lo que hacemos un reseteo de estilos, para ello usamos el 
+selector universal que se aplica a todos los elementos de html(*)
+*/
+
+* {
+  margin: 0; /*si es 0 el valor no se pone el tipo*/
+  padding: 0;
+  box-sizing: border-box; /*en CSS se cometió un error al diseñarlo, respecto a los tamaños, y es considerar que cuando das un amaño al elemento ese tamaño es para ese elemento, pero si tu luego le pones un border o un padding se añade sobre el tamaño que tu hayas puesto, por lo que si usas esta propiedad el tamaño es el que es y si añades algo a ese elemento se hace sobre ese tamaño no lo añade extra*/
+}
+/*las propiedades que se heredan se ponen conn la etiqueta body y las que no en * */
+body {
+  font-family: "Lato", sans-serif; /* font is inherit by child tags. More efficient then use the universal selector */
+  font-weight: 400;
+  font-size: 16px; /* Later we are going to use a better approach */
+  line-height: 1.7;
+  color: #777;
+}
